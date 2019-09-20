@@ -9,7 +9,7 @@ Future<void> main() async {
   Hive.init(dir.path);
 
   // Comment out the below line and the test will run.
-  final box = await Hive.openBox('general');
+  await Hive.openBox('general');
 
   runApp(MyApp());
 }
